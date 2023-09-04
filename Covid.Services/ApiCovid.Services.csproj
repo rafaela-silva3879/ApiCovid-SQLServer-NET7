@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.5.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.7" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ApiCovid.Application\ApiCovid.Application.csproj" />
+    <ProjectReference Include="..\ApiCovid.Domain\ApiCovid.Domain.csproj" />
+    <ProjectReference Include="..\ApiCovid.Infra.Data\ApiCovid.Infra.Data.csproj" />
+    <ProjectReference Include="..\ApiCovid.Infra.Security\ApiCovid.Infra.Security.csproj" />
+  </ItemGroup>
+
+</Project>
